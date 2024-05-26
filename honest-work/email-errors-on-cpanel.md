@@ -1,4 +1,4 @@
-### Source: https://github.com/PHPMailer/PHPMailer/wiki/Troubleshooting#certificate-verification-failure
+### Source: Honest Work (Written by Myself)
 
 ## Overview
 There could be multiple errors that can occur. We'll start with issues that are more related to the server than your
