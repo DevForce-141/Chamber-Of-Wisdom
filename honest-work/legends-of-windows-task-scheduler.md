@@ -27,6 +27,3 @@ This does not make any sense but solves your problem. Windows 2016 still has thi
 It is easy to mistake them as extra actions to ensure task runs. For example "wake computer to run task". However, small
 text on the top says that alongside trigger, these conditions must be true as well; else, task will not run.
 ![Task Scheduler Conditions](../public/images/honest-work/task-scheduler-conditions.png "Task Scheduler Conditions")
-
-[PHP mailer Github Wiki](https://github.com/PHPMailer/PHPMailer/wiki/Troubleshooting#certificate-verification-failure).
-
