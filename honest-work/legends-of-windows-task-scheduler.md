@@ -27,3 +27,16 @@ This does not make any sense but solves your problem. Windows 2016 still has thi
 It is easy to mistake them as extra actions to ensure task runs. For example "wake computer to run task". However, small
 text on the top says that alongside trigger, these conditions must be true as well; else, task will not run.
 ![Task Scheduler Conditions](../public/images/honest-work/task-scheduler-conditions.png "Task Scheduler Conditions")
+
+### Windows Task Scheduler x Laravel Scheduler
+For this approach, schedule a task to run every minute which runs laravel scheduler. Please note that it will spawn a process
+which is similar to when you run a laravel command in CLI. However, the difference is that it is blocking. It will not run
+other scheduled commands except the first one (not well tested but it is observed at least some other commands do not run).
+For this, you will need to run your commands in background mode using ``runInBackground()``.
+Given your scheduler is running every minute, there are chances of task overlapping, so you should use ``withoutOverlapping()``
+to prevent running one task multiple times. Task overlocking uses a cache lock which defaults to 24 hours. So based on your
+scheduled command, set a different expiry time by providing it as parameter to the function. If you're running your command
+every 5 minutes, you should set the expiry lock to 5 minutes.
+Currently, I don't know & don't understand how a lock can get stuck and prevent further scheduled executions but what I have
+found out via observation is that you need to specify lock expiry time if your command runs again in less than 24hrs as
+default expiry time is ``1440mins (24hrs)``.
