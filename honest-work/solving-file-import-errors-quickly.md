@@ -8,4 +8,4 @@ But there's one tool to solve them all!
 Use a text diff tool. It got everything to make your temporary biased and blind eyes see the truth.
 Just copy the import path/string from your code and copy the mentioned path in the error message. Make sure you copy to NOT
 leave any room for human error again!
-[Let the attached screenshot speak for it!](../public/images/honest-work/text-diff-for-import-issues.png "Text Diff Tool in Action")
+![Let the attached screenshot speak for it!](../public/images/honest-work/text-diff-for-import-issues.png "Text Diff Tool in Action")
