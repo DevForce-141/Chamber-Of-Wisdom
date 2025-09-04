@@ -72,8 +72,9 @@ There are three main parts of web development:
 2. Backend Development
 3. Databases/Persistent Storage
 
-If you have some technical questions, here's a [Post]() which covers common and yet confusing (for beginners) questions that
-we've attempted to answer in simple ways and clear up the confusion.
+If you have some technical questions, here's a [Post](https://github.com/DevForce-141/Chamber-Of-Wisdom/blob/main/honest-work/programming-faqs.md) 
+which covers common and yet confusing (for beginners) questions that we've attempted to answer in simple ways and 
+clear up the confusion.
 
 ## Frontend Development
 This is everything users see and interact with directly in their browser—buttons, layouts, colors, animations, forms, etc.
